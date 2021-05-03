@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lilita+One&family=Quicksand:wght@300&display=swap" rel="stylesheet"><!--text2-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lilita+One&family=Quicksand:wght@300&display=swap" rel="stylesheet"><!--text-->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="template1.css" rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+  					function printMe(){
+  					var userInput, myBox;
+  					userInput = document.getElementById("name").value;
+  					myBox = document.getElementById("sini");
+
+
+  					myBox.innerHTML = userInput;
+          }
+
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+      }
+
+      function drop(ev) {
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+        ev.preventDefault();
+      }
+  	</script>
+    <style>
+      #img,#sini,#name{
+          font-family: AvalonRegular, Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          color: #355C7D;
+          text-align: center;
+          }
+
+      [contenteditable] {
+      outline: 0px solid transparent;}
+
+
+      #gambar{
+       width: 500px;
+       height: 600px;
+       border: 1px solid black;
+       background-image: url("assets/halloween.png");
+       background-size: 500px 600px;
+       color: red;
+       margin-top: 50px;
+       margin-left: auto;
+       margin-right: auto;
+      }
+
+      #text{
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+        position: absolute;
+        right: 580px;
+        top: 280px;
+      }
+
+      #text2{
+        color: #db5528;
+        font-family: 'Freckle Face', cursive;
+        font-size: 80px;
+        position: absolute;
+        right: 550px;
+        top: 240px;
+        word-wrap: break-word; /*inda mau*/
+        text-align: center;
+      }
+
+      #text3{
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+        position: absolute;
+        right: 550px;
+        top: 640px;
+        word-wrap: break-word; /*inda mau*/
+        text-align: center;
+      }
+      .button{
+      width:150px;
+      height:80px;
+      font-family: 'Paytone One', sans-serif;
+      background:#6495ED;
+      font-size: 150%;
+      margin: 0;
+      position: absolute;
+      top:60%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      }
+
+      #container {
+      height: 150px;
+      position: relative;
+      border: 3px solid #8C8F8F;
+      }
+
+      p{
+      text-align:center;
+      font-family: 'Bangers', cursive;
+      font-size: 20px;
+      }
+
+      body{
+        background-image: url("assets/back.png");
+      }
+
+    </style>
+
+
+  </head>
+
+  <body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><img src="logo/logoo.png"></a>
+            </div>
+
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="formal.html" class="nav__link">Formal</a></li>
+                    <li class="nav__item"><a href="informal.html" class="nav__link">Informal</a></li>
+                    <li class="nav__item"><a href="corporate.html" class="nav__link">Corporate</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
+                </ul>
+
+        </nav>
+    </header>
+  </body>
+
+  <br/>
+  <br/>
+  <br/>
+
+    <body>
+      <div id="gambar">
+        <h4 contenteditable="true" id="text">You are invited to our</h4>
+        <h4 contenteditable="true" id="text2">Witchy <br/> Potluck <br/>Party </h4>
+        <h4 contenteditable="true" id="text3">Oct. 31 | 7 PM | The Quentin Residence</h4>
+      </div>
+
+      <br/>
+      <div id="container">
+        <p> Save and Download Your Template</p>
+        <button class="button">Save</button>
+      </div>
+
+    </body>
+    <body>
+      <script src="informal2.js"></script>
+      <script>
+        $("#text, #text2, #text3").draggable()
+        .click(function() {
+          $(this).draggable({
+            disabled: false
+          });
+        }).dblclick(function() {
+          $(this).draggable({
+            disabled: true
+          });
+        });
+      </script>
+    </body>
+    <br/>
+    <br/>
+</html>
